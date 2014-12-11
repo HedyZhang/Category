@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */ = {isa = PBXBuildFile; fileRef = F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */; };
+		F56911CB1962EA1500765F0D /* UIColor+HexColorString.m in Sources */ = {isa = PBXBuildFile; fileRef = F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */; };
 		F5C2114B1924D26600FC3B7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2114A1924D26600FC3B7C /* Foundation.framework */; };
 		F5C2114D1924D26600FC3B7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2114C1924D26600FC3B7C /* CoreGraphics.framework */; };
 		F5C2114F1924D26600FC3B7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2114E1924D26600FC3B7C /* UIKit.framework */; };
@@ -19,6 +21,8 @@
 		F5C211661924D26600FC3B7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2114E1924D26600FC3B7C /* UIKit.framework */; };
 		F5C2116E1924D26600FC3B7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5C2116C1924D26600FC3B7C /* InfoPlist.strings */; };
 		F5C211701924D26600FC3B7C /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C2116F1924D26600FC3B7C /* CategoryTests.m */; };
+		F5C2117B1924D27C00FC3B7C /* NSArray+ArraySort.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C2117A1924D27C00FC3B7C /* NSArray+ArraySort.m */; };
+		F5C2117E1924D2A600FC3B7C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C2117D1924D2A600FC3B7C /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ActivityIndicatorView; sourceTree = "<group>"; };
+		F56911C91962EA1500765F0D /* UIColor+HexColorString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColorString.h"; sourceTree = "<group>"; };
+		F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColorString.m"; sourceTree = "<group>"; };
 		F5C211471924D26600FC3B7C /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C2114A1924D26600FC3B7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5C2114C1924D26600FC3B7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +55,10 @@
 		F5C2116B1924D26600FC3B7C /* CategoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategoryTests-Info.plist"; sourceTree = "<group>"; };
 		F5C2116D1924D26600FC3B7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5C2116F1924D26600FC3B7C /* CategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
+		F5C211791924D27C00FC3B7C /* NSArray+ArraySort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ArraySort.h"; sourceTree = "<group>"; };
+		F5C2117A1924D27C00FC3B7C /* NSArray+ArraySort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ArraySort.m"; sourceTree = "<group>"; };
+		F5C2117C1924D2A600FC3B7C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F5C2117D1924D2A600FC3B7C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +120,13 @@
 			children = (
 				F5C211591924D26600FC3B7C /* AppDelegate.h */,
 				F5C2115A1924D26600FC3B7C /* AppDelegate.m */,
+				F5C2117C1924D2A600FC3B7C /* RootViewController.h */,
+				F5C2117D1924D2A600FC3B7C /* RootViewController.m */,
+				F5C211791924D27C00FC3B7C /* NSArray+ArraySort.h */,
+				F5C2117A1924D27C00FC3B7C /* NSArray+ArraySort.m */,
+				F56911C91962EA1500765F0D /* UIColor+HexColorString.h */,
+				F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */,
+				F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */,
 				F5C2115C1924D26600FC3B7C /* Images.xcassets */,
 				F5C211511924D26600FC3B7C /* Supporting Files */,
 			);
@@ -220,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C211551924D26600FC3B7C /* InfoPlist.strings in Resources */,
+				F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */,
 				F5C2115D1924D26600FC3B7C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C2117B1924D27C00FC3B7C /* NSArray+ArraySort.m in Sources */,
+				F56911CB1962EA1500765F0D /* UIColor+HexColorString.m in Sources */,
 				F5C2115B1924D26600FC3B7C /* AppDelegate.m in Sources */,
+				F5C2117E1924D2A600FC3B7C /* RootViewController.m in Sources */,
 				F5C211571924D26600FC3B7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +459,7 @@
 				F5C211751924D26600FC3B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C211761924D26600FC3B7C /* Build configuration list for PBXNativeTarget "CategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +468,7 @@
 				F5C211781924D26600FC3B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
