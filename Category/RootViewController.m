@@ -9,7 +9,9 @@
 #import "RootViewController.h"
 #import "NSArray+ArraySort.h"
 #import "UIColor+HexColorString.h"
+#import "UIView+Animation.h"
 @interface RootViewController ()
+@property (strong, nonatomic) IBOutlet UIView *aView;
 
 @end
 
@@ -27,25 +29,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//     [UIColor colorFromHexRGB:@"ffffff"];
-//   NSLog(@"%@", [UIColor HexRGBFromColor:[UIColor whiteColor]]);
+        
     
-    
-//    
-//    NSArray *ary = @[@(7), @(5), @(5), @(8), @(5), @(6), @(13), @(6), @(1)];
-//    NSMutableArray * array = [NSMutableArray arrayWithArray:ary];
-//
-//    [NSArray quickSortWithArray:array startIndex:0 endIndex:ary.count - 1];
-//    for (NSNumber *num in array) {
-//        NSLog(@"%d", [num integerValue]);
-//    }
-    
-//    NSArray *ary1 =[NSArray sortBlock:ary];
-//    [ary1 enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-//        NSLog(@"///////////////%d", [obj intValue]);
-//    }];
-    
-    
+}
+- (IBAction)action:(UIButton *)sender
+{
+    [_aView shakingAnimation];
 }
 
 - (void)didReceiveMemoryWarning

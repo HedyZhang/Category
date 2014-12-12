@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533041B01A3AB2AB00930BDF /* RootViewContrller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */; };
+		53DF24DF1A3AB02E002BD790 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */; };
+		53DF24E11A3AB09F002BD790 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF24E01A3AB09F002BD790 /* QuartzCore.framework */; };
 		F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */ = {isa = PBXBuildFile; fileRef = F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */; };
 		F56911CB1962EA1500765F0D /* UIColor+HexColorString.m in Sources */ = {isa = PBXBuildFile; fileRef = F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */; };
 		F5C2114B1924D26600FC3B7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2114A1924D26600FC3B7C /* Foundation.framework */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewContrller.xib; sourceTree = "<group>"; };
+		53DF24DD1A3AB02E002BD790 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		53DF24E01A3AB09F002BD790 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ActivityIndicatorView; sourceTree = "<group>"; };
 		F56911C91962EA1500765F0D /* UIColor+HexColorString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColorString.h"; sourceTree = "<group>"; };
 		F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColorString.m"; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DF24E11A3AB09F002BD790 /* QuartzCore.framework in Frameworks */,
 				F5C2114D1924D26600FC3B7C /* CoreGraphics.framework in Frameworks */,
 				F5C2114F1924D26600FC3B7C /* UIKit.framework in Frameworks */,
 				F5C2114B1924D26600FC3B7C /* Foundation.framework in Frameworks */,
@@ -107,6 +115,7 @@
 		F5C211491924D26600FC3B7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53DF24E01A3AB09F002BD790 /* QuartzCore.framework */,
 				F5C2114A1924D26600FC3B7C /* Foundation.framework */,
 				F5C2114C1924D26600FC3B7C /* CoreGraphics.framework */,
 				F5C2114E1924D26600FC3B7C /* UIKit.framework */,
@@ -122,10 +131,13 @@
 				F5C2115A1924D26600FC3B7C /* AppDelegate.m */,
 				F5C2117C1924D2A600FC3B7C /* RootViewController.h */,
 				F5C2117D1924D2A600FC3B7C /* RootViewController.m */,
+				533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */,
 				F5C211791924D27C00FC3B7C /* NSArray+ArraySort.h */,
 				F5C2117A1924D27C00FC3B7C /* NSArray+ArraySort.m */,
 				F56911C91962EA1500765F0D /* UIColor+HexColorString.h */,
 				F56911CA1962EA1500765F0D /* UIColor+HexColorString.m */,
+				53DF24DD1A3AB02E002BD790 /* UIView+Animation.h */,
+				53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */,
 				F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */,
 				F5C2115C1924D26600FC3B7C /* Images.xcassets */,
 				F5C211511924D26600FC3B7C /* Supporting Files */,
@@ -239,6 +251,7 @@
 			files = (
 				F5C211551924D26600FC3B7C /* InfoPlist.strings in Resources */,
 				F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */,
+				533041B01A3AB2AB00930BDF /* RootViewContrller.xib in Resources */,
 				F5C2115D1924D26600FC3B7C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +273,7 @@
 			files = (
 				F5C2117B1924D27C00FC3B7C /* NSArray+ArraySort.m in Sources */,
 				F56911CB1962EA1500765F0D /* UIColor+HexColorString.m in Sources */,
+				53DF24DF1A3AB02E002BD790 /* UIView+Animation.m in Sources */,
 				F5C2115B1924D26600FC3B7C /* AppDelegate.m in Sources */,
 				F5C2117E1924D2A600FC3B7C /* RootViewController.m in Sources */,
 				F5C211571924D26600FC3B7C /* main.m in Sources */,
