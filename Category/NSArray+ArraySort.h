@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (ArraySort)
+ void quickSort(int a[],int left,int right);
++ (void)quickSortWithArray:(NSMutableArray *)sortArray startIndex:(NSInteger)left endIndex:(NSInteger)right;
+void insertSort(int a[], int n);
+void bubbleSort(int a[], int n);
 
-+ (NSArray *)sortBlock:(NSArray *)ary;
-
-//快速排序
-+ (NSMutableArray *)quickSort:(NSMutableArray *)ary;
-
-+ (void)quickSortWithArray:(NSMutableArray *)listArray startIndex:(NSInteger )left endIndex:(NSInteger )right;
 @end

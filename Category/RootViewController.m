@@ -29,7 +29,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+//    NSMutableArray *sortArray1 = [NSMutableArray arrayWithObjects:@(4), @(6),@(5), @(8),@(9), @(3), nil];
+//    [NSArray quickSortWithArray:sortArray1 startIndex:0 endIndex:(sortArray1.count - 1)];
+//    NSLog(@"----%@", sortArray1);
+    int a[] = {4,6,5,8,9,3};
+//    insertSort(a, 6);
+    bubbleSort(a, 6);
+    for (int k = 0; k < 6; k++)
+    {
+        printf("%d  ", a[k]);
+    }
+    
     
 }
 - (IBAction)action:(UIButton *)sender
