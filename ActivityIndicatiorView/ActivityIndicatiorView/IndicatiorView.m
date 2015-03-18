@@ -52,7 +52,7 @@
     animation.fromValue = @(0);
     animation.toValue = @(2*M_PI);
     animation.duration = 1.f;
-    animation.repeatCount = INT_MAX;
+    animation.repeatCount = HUGE_VAL;
     [self.layer addAnimation:animation forKey:@"keyFrameAnimation"];
 }
 - (void)stopRotateAnimation

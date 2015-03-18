@@ -10,6 +10,8 @@
 		531CF78E1AA70105004B1855 /* ZDGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 531CF78D1AA70105004B1855 /* ZDGifView.m */; };
 		531CF7901AA7019C004B1855 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531CF78F1AA7019C004B1855 /* ImageIO.framework */; };
 		533041B01A3AB2AB00930BDF /* RootViewContrller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */; };
+		536F6A391AA93718001EDE7D /* HDSharedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536F6A381AA93718001EDE7D /* HDSharedViewController.m */; };
+		536F6A3B1AA9378A001EDE7D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 536F6A3A1AA9378A001EDE7D /* Default@2x.png */; };
 		53DF24DF1A3AB02E002BD790 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */; };
 		53DF24E11A3AB09F002BD790 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF24E01A3AB09F002BD790 /* QuartzCore.framework */; };
 		F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */ = {isa = PBXBuildFile; fileRef = F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */; };
@@ -31,6 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		531CC4F21AB985DA00A78BD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531CC4C11AB96FEF00A78BD0;
+			remoteInfo = CustomCapture;
+		};
+		531CC4F41AB985DA00A78BD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531CC4DA1AB96FEF00A78BD0;
+			remoteInfo = CustomCaptureTests;
+		};
 		F5C211671924D26600FC3B7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F5C2113F1924D26600FC3B7C /* Project object */;
@@ -41,10 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CustomCapture.xcodeproj; path = CustomCapture/CustomCapture.xcodeproj; sourceTree = "<group>"; };
 		531CF78C1AA70105004B1855 /* ZDGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGifView.h; sourceTree = "<group>"; };
 		531CF78D1AA70105004B1855 /* ZDGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGifView.m; sourceTree = "<group>"; };
 		531CF78F1AA7019C004B1855 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewContrller.xib; sourceTree = "<group>"; };
+		536F6A371AA93718001EDE7D /* HDSharedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSharedViewController.h; sourceTree = "<group>"; };
+		536F6A381AA93718001EDE7D /* HDSharedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSharedViewController.m; sourceTree = "<group>"; };
+		536F6A3A1AA9378A001EDE7D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		53DF24DD1A3AB02E002BD790 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		53DF24E01A3AB09F002BD790 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -99,9 +119,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		531CC4EE1AB985DA00A78BD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				531CC4F31AB985DA00A78BD0 /* CustomCapture.app */,
+				531CC4F51AB985DA00A78BD0 /* CustomCaptureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F5C2113E1924D26600FC3B7C = {
 			isa = PBXGroup;
 			children = (
+				531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */,
 				F5C211501924D26600FC3B7C /* Category */,
 				F5C211691924D26600FC3B7C /* CategoryTests */,
 				F5C211491924D26600FC3B7C /* Frameworks */,
@@ -138,6 +168,7 @@
 				F5C2115A1924D26600FC3B7C /* AppDelegate.m */,
 				F5C2117C1924D2A600FC3B7C /* RootViewController.h */,
 				F5C2117D1924D2A600FC3B7C /* RootViewController.m */,
+				536F6A3A1AA9378A001EDE7D /* Default@2x.png */,
 				533041AF1A3AB2AB00930BDF /* RootViewContrller.xib */,
 				F5C211791924D27C00FC3B7C /* NSArray+ArraySort.h */,
 				F5C2117A1924D27C00FC3B7C /* NSArray+ArraySort.m */,
@@ -147,6 +178,8 @@
 				53DF24DE1A3AB02E002BD790 /* UIView+Animation.m */,
 				531CF78C1AA70105004B1855 /* ZDGifView.h */,
 				531CF78D1AA70105004B1855 /* ZDGifView.m */,
+				536F6A371AA93718001EDE7D /* HDSharedViewController.h */,
+				536F6A381AA93718001EDE7D /* HDSharedViewController.m */,
 				F5496CA21965A55F00DDAD2A /* ActivityIndicatorView */,
 				F5C2115C1924D26600FC3B7C /* Images.xcassets */,
 				F5C211511924D26600FC3B7C /* Supporting Files */,
@@ -248,6 +281,12 @@
 			mainGroup = F5C2113E1924D26600FC3B7C;
 			productRefGroup = F5C211481924D26600FC3B7C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 531CC4EE1AB985DA00A78BD0 /* Products */;
+					ProjectRef = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F5C211461924D26600FC3B7C /* Category */,
@@ -256,6 +295,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		531CC4F31AB985DA00A78BD0 /* CustomCapture.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CustomCapture.app;
+			remoteRef = 531CC4F21AB985DA00A78BD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		531CC4F51AB985DA00A78BD0 /* CustomCaptureTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CustomCaptureTests.xctest;
+			remoteRef = 531CC4F41AB985DA00A78BD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		F5C211451924D26600FC3B7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -263,6 +319,7 @@
 			files = (
 				F5C211551924D26600FC3B7C /* InfoPlist.strings in Resources */,
 				F5496CA31965A55F00DDAD2A /* ActivityIndicatorView in Resources */,
+				536F6A3B1AA9378A001EDE7D /* Default@2x.png in Resources */,
 				533041B01A3AB2AB00930BDF /* RootViewContrller.xib in Resources */,
 				F5C2115D1924D26600FC3B7C /* Images.xcassets in Resources */,
 			);
@@ -288,6 +345,7 @@
 				53DF24DF1A3AB02E002BD790 /* UIView+Animation.m in Sources */,
 				531CF78E1AA70105004B1855 /* ZDGifView.m in Sources */,
 				F5C2115B1924D26600FC3B7C /* AppDelegate.m in Sources */,
+				536F6A391AA93718001EDE7D /* HDSharedViewController.m in Sources */,
 				F5C2117E1924D2A600FC3B7C /* RootViewController.m in Sources */,
 				F5C211571924D26600FC3B7C /* main.m in Sources */,
 			);

@@ -5,6 +5,9 @@
       location = "group:ActivityIndicatiorView/ActivityIndicatiorView.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:CustomCapture/CustomCapture.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Category.xcodeproj">
    </FileRef>
 </Workspace>

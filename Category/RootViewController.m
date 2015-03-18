@@ -10,6 +10,7 @@
 #import "NSArray+ArraySort.h"
 #import "UIColor+HexColorString.h"
 #import "UIView+Animation.h"
+#import "HDSharedViewController.h"
 @interface RootViewController ()
 @property (strong, nonatomic) IBOutlet UIView *aView;
 
@@ -32,19 +33,30 @@
 //    NSMutableArray *sortArray1 = [NSMutableArray arrayWithObjects:@(4), @(6),@(5), @(8),@(9), @(3), nil];
 //    [NSArray quickSortWithArray:sortArray1 startIndex:0 endIndex:(sortArray1.count - 1)];
 //    NSLog(@"----%@", sortArray1);
-    int a[] = {4,6,5,8,9,3};
+//    int a[] = {4,6,5,8,9,3};
 //    insertSort(a, 6);
-    bubbleSort(a, 6);
-    for (int k = 0; k < 6; k++)
-    {
-        printf("%d  ", a[k]);
-    }
+//    bubbleSort(a, 6);
+//    for (int k = 0; k < 6; k++)
+//    {
+//        printf("%d  ", a[k]);
+//    }
+    
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    imageView.image = [UIImage imageNamed:@"Default"];
+//    [self.view addSubview:imageView];
     
     
 }
 - (IBAction)action:(UIButton *)sender
 {
-    [_aView shakingAnimation];
+//    [_aView shakingAnimation];
+    HDSharedViewController *sharedView = [ [HDSharedViewController alloc] init];
+    sharedView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:sharedView animated:YES
+                     completion:^{
+                         
+                     }];
+
 }
 
 - (void)didReceiveMemoryWarning
