@@ -33,20 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		531CC4F21AB985DA00A78BD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 531CC4C11AB96FEF00A78BD0;
-			remoteInfo = CustomCapture;
-		};
-		531CC4F41AB985DA00A78BD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 531CC4DA1AB96FEF00A78BD0;
-			remoteInfo = CustomCaptureTests;
-		};
 		F5C211671924D26600FC3B7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F5C2113F1924D26600FC3B7C /* Project object */;
@@ -57,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CustomCapture.xcodeproj; path = CustomCapture/CustomCapture.xcodeproj; sourceTree = "<group>"; };
 		531CF78C1AA70105004B1855 /* ZDGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDGifView.h; sourceTree = "<group>"; };
 		531CF78D1AA70105004B1855 /* ZDGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDGifView.m; sourceTree = "<group>"; };
 		531CF78F1AA7019C004B1855 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -119,19 +104,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		531CC4EE1AB985DA00A78BD0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				531CC4F31AB985DA00A78BD0 /* CustomCapture.app */,
-				531CC4F51AB985DA00A78BD0 /* CustomCaptureTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F5C2113E1924D26600FC3B7C = {
 			isa = PBXGroup;
 			children = (
-				531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */,
 				F5C211501924D26600FC3B7C /* Category */,
 				F5C211691924D26600FC3B7C /* CategoryTests */,
 				F5C211491924D26600FC3B7C /* Frameworks */,
@@ -281,12 +256,6 @@
 			mainGroup = F5C2113E1924D26600FC3B7C;
 			productRefGroup = F5C211481924D26600FC3B7C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 531CC4EE1AB985DA00A78BD0 /* Products */;
-					ProjectRef = 531CC4ED1AB985DA00A78BD0 /* CustomCapture.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F5C211461924D26600FC3B7C /* Category */,
@@ -294,23 +263,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		531CC4F31AB985DA00A78BD0 /* CustomCapture.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = CustomCapture.app;
-			remoteRef = 531CC4F21AB985DA00A78BD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		531CC4F51AB985DA00A78BD0 /* CustomCaptureTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CustomCaptureTests.xctest;
-			remoteRef = 531CC4F41AB985DA00A78BD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F5C211451924D26600FC3B7C /* Resources */ = {
