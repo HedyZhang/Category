@@ -77,7 +77,8 @@ void getFrameInfo(CFURLRef url, NSMutableArray *frames, NSMutableArray *delayTim
         _width = 0;
         _height = 0;
         
-        if (fileURL) {
+        if (fileURL)
+        {
             getFrameInfo((__bridge  CFURLRef)fileURL, _frames, _frameDelayTimes, &_totalTime, &_width, &_height);
         }
         

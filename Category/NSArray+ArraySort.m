@@ -39,6 +39,8 @@ void exchange(int *a, int *b)
     a[i]=temp;
     quickSort(a,left,i-1);
     quickSort(a,i+1,right);
+
+    
 }
 
 + (void)quickSortWithArray:(NSMutableArray *)sortArray startIndex:(NSInteger)left endIndex:(NSInteger)right
