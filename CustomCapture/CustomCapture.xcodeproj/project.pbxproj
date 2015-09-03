@@ -15,6 +15,20 @@
 		531CC4D51AB96FEF00A78BD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531CC4D31AB96FEF00A78BD0 /* LaunchScreen.xib */; };
 		531CC4E11AB96FEF00A78BD0 /* CustomCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 531CC4E01AB96FEF00A78BD0 /* CustomCaptureTests.m */; };
 		531CC4EC1AB9700000A78BD0 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531CC4EB1AB9700000A78BD0 /* CaptureViewController.m */; };
+		7D5C64E51B98117400CC59BF /* ScanQR1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64DB1B98117400CC59BF /* ScanQR1@2x.png */; };
+		7D5C64E61B98117400CC59BF /* ScanQR1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64DC1B98117400CC59BF /* ScanQR1@3x.png */; };
+		7D5C64E71B98117400CC59BF /* ScanQR2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64DD1B98117400CC59BF /* ScanQR2@2x.png */; };
+		7D5C64E81B98117400CC59BF /* ScanQR2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64DE1B98117400CC59BF /* ScanQR2@3x.png */; };
+		7D5C64E91B98117400CC59BF /* ScanQR3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64DF1B98117400CC59BF /* ScanQR3@2x.png */; };
+		7D5C64EA1B98117400CC59BF /* ScanQR3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64E01B98117400CC59BF /* ScanQR3@3x.png */; };
+		7D5C64EB1B98117400CC59BF /* ScanQR4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64E11B98117400CC59BF /* ScanQR4@2x.png */; };
+		7D5C64EC1B98117400CC59BF /* ScanQR4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64E21B98117400CC59BF /* ScanQR4@3x.png */; };
+		7D5C64ED1B98117400CC59BF /* ScanQRCode_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64E31B98117400CC59BF /* ScanQRCode_HL@2x.png */; };
+		7D5C64EE1B98117400CC59BF /* ScanQRCode_HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64E41B98117400CC59BF /* ScanQRCode_HL@3x.png */; };
+		7D5C64F01B98118900CC59BF /* ff_QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64EF1B98118900CC59BF /* ff_QRCodeScanLine@2x.png */; };
+		7D5C64F31B9811AF00CC59BF /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C64F21B9811AF00CC59BF /* QRView.m */; };
+		7D5C64F51B9855ED00CC59BF /* qrcode_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C64F41B9855ED00CC59BF /* qrcode_border@2x.png */; };
+		7DCB2E081B95B3BB00002BB1 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB2E071B95B3BB00002BB1 /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +57,22 @@
 		531CC4E01AB96FEF00A78BD0 /* CustomCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCaptureTests.m; sourceTree = "<group>"; };
 		531CC4EA1AB9700000A78BD0 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
 		531CC4EB1AB9700000A78BD0 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		7D5C64DB1B98117400CC59BF /* ScanQR1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR1@2x.png"; sourceTree = "<group>"; };
+		7D5C64DC1B98117400CC59BF /* ScanQR1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR1@3x.png"; sourceTree = "<group>"; };
+		7D5C64DD1B98117400CC59BF /* ScanQR2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR2@2x.png"; sourceTree = "<group>"; };
+		7D5C64DE1B98117400CC59BF /* ScanQR2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR2@3x.png"; sourceTree = "<group>"; };
+		7D5C64DF1B98117400CC59BF /* ScanQR3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR3@2x.png"; sourceTree = "<group>"; };
+		7D5C64E01B98117400CC59BF /* ScanQR3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR3@3x.png"; sourceTree = "<group>"; };
+		7D5C64E11B98117400CC59BF /* ScanQR4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR4@2x.png"; sourceTree = "<group>"; };
+		7D5C64E21B98117400CC59BF /* ScanQR4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR4@3x.png"; sourceTree = "<group>"; };
+		7D5C64E31B98117400CC59BF /* ScanQRCode_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQRCode_HL@2x.png"; sourceTree = "<group>"; };
+		7D5C64E41B98117400CC59BF /* ScanQRCode_HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQRCode_HL@3x.png"; sourceTree = "<group>"; };
+		7D5C64EF1B98118900CC59BF /* ff_QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
+		7D5C64F11B9811AF00CC59BF /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		7D5C64F21B9811AF00CC59BF /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		7D5C64F41B9855ED00CC59BF /* qrcode_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_border@2x.png"; sourceTree = "<group>"; };
+		7DCB2E061B95B3BB00002BB1 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		7DCB2E071B95B3BB00002BB1 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +118,25 @@
 				531CC4C91AB96FEF00A78BD0 /* AppDelegate.m */,
 				531CC4CB1AB96FEF00A78BD0 /* ViewController.h */,
 				531CC4CC1AB96FEF00A78BD0 /* ViewController.m */,
+				7DCB2E061B95B3BB00002BB1 /* QRViewController.h */,
+				7DCB2E071B95B3BB00002BB1 /* QRViewController.m */,
 				531CC4EA1AB9700000A78BD0 /* CaptureViewController.h */,
 				531CC4EB1AB9700000A78BD0 /* CaptureViewController.m */,
+				7D5C64F11B9811AF00CC59BF /* QRView.h */,
+				7D5C64F21B9811AF00CC59BF /* QRView.m */,
 				531CC4CE1AB96FEF00A78BD0 /* Main.storyboard */,
+				7D5C64F41B9855ED00CC59BF /* qrcode_border@2x.png */,
+				7D5C64DB1B98117400CC59BF /* ScanQR1@2x.png */,
+				7D5C64DC1B98117400CC59BF /* ScanQR1@3x.png */,
+				7D5C64DD1B98117400CC59BF /* ScanQR2@2x.png */,
+				7D5C64DE1B98117400CC59BF /* ScanQR2@3x.png */,
+				7D5C64DF1B98117400CC59BF /* ScanQR3@2x.png */,
+				7D5C64E01B98117400CC59BF /* ScanQR3@3x.png */,
+				7D5C64E11B98117400CC59BF /* ScanQR4@2x.png */,
+				7D5C64E21B98117400CC59BF /* ScanQR4@3x.png */,
+				7D5C64E31B98117400CC59BF /* ScanQRCode_HL@2x.png */,
+				7D5C64E41B98117400CC59BF /* ScanQRCode_HL@3x.png */,
+				7D5C64EF1B98118900CC59BF /* ff_QRCodeScanLine@2x.png */,
 				531CC4D11AB96FEF00A78BD0 /* Images.xcassets */,
 				531CC4D31AB96FEF00A78BD0 /* LaunchScreen.xib */,
 				531CC4C41AB96FEF00A78BD0 /* Supporting Files */,
@@ -204,9 +250,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5C64E61B98117400CC59BF /* ScanQR1@3x.png in Resources */,
+				7D5C64E81B98117400CC59BF /* ScanQR2@3x.png in Resources */,
+				7D5C64E71B98117400CC59BF /* ScanQR2@2x.png in Resources */,
+				7D5C64E51B98117400CC59BF /* ScanQR1@2x.png in Resources */,
 				531CC4D01AB96FEF00A78BD0 /* Main.storyboard in Resources */,
+				7D5C64F01B98118900CC59BF /* ff_QRCodeScanLine@2x.png in Resources */,
 				531CC4D51AB96FEF00A78BD0 /* LaunchScreen.xib in Resources */,
+				7D5C64E91B98117400CC59BF /* ScanQR3@2x.png in Resources */,
+				7D5C64EB1B98117400CC59BF /* ScanQR4@2x.png in Resources */,
+				7D5C64F51B9855ED00CC59BF /* qrcode_border@2x.png in Resources */,
+				7D5C64EC1B98117400CC59BF /* ScanQR4@3x.png in Resources */,
+				7D5C64EA1B98117400CC59BF /* ScanQR3@3x.png in Resources */,
+				7D5C64EE1B98117400CC59BF /* ScanQRCode_HL@3x.png in Resources */,
 				531CC4D21AB96FEF00A78BD0 /* Images.xcassets in Resources */,
+				7D5C64ED1B98117400CC59BF /* ScanQRCode_HL@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				531CC4CD1AB96FEF00A78BD0 /* ViewController.m in Sources */,
+				7DCB2E081B95B3BB00002BB1 /* QRViewController.m in Sources */,
 				531CC4EC1AB9700000A78BD0 /* CaptureViewController.m in Sources */,
 				531CC4CA1AB96FEF00A78BD0 /* AppDelegate.m in Sources */,
 				531CC4C71AB96FEF00A78BD0 /* main.m in Sources */,
+				7D5C64F31B9811AF00CC59BF /* QRView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +478,7 @@
 				531CC4E61AB96FEF00A78BD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		531CC4E71AB96FEF00A78BD0 /* Build configuration list for PBXNativeTarget "CustomCaptureTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +487,7 @@
 				531CC4E91AB96FEF00A78BD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
