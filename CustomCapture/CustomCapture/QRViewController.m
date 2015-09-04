@@ -22,6 +22,10 @@
 
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer * previewLayer;
 
+@property (nonatomic, strong) QRView *qrRectView;
+
+@property (nonatomic, strong) UILabel *promptLabel;
+
 @end
 
 @implementation QRViewController
@@ -29,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"二维码/条形码扫描";
     [self setupSession];
 }
 - (void)setupSession
@@ -74,27 +79,59 @@
 - (void)initQrView
 {
     CGRect screenRect = [UIScreen mainScreen].bounds;
-    QRView *qrRectView = [[QRView alloc] initWithFrame:screenRect];
-    qrRectView.backgroundColor = [UIColor clearColor];
-    qrRectView.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height / 2);
-    [self.view addSubview:qrRectView];
+    self.qrRectView = [[QRView alloc] initWithFrame:screenRect];
+    _qrRectView.backgroundColor = [UIColor clearColor];
+    _qrRectView.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height / 2);
+    [self.view addSubview:_qrRectView];
     
     //修正扫描区域
-    //    CGFloat screenHeight = self.view.frame.size.height;
-    //    CGFloat screenWidth = self.view.frame.size.width;
-    //    CGRect cropRect = CGRectMake((screenWidth - qrRectView.transparentArea.width) / 2,
-    //                                 (screenHeight - qrRectView.transparentArea.height) / 2,
-    //                                 qrRectView.transparentArea.width,
-    //                                 qrRectView.transparentArea.height);
-    //
-    //    [_output setRectOfInterest:CGRectMake(cropRect.origin.y / screenHeight,
-    //                                          cropRect.origin.x / screenWidth,
-    //                                          cropRect.size.height / screenHeight,
-    //                                          cropRect.size.width / screenWidth)];
+    CGFloat screenHeight = self.view.frame.size.height;
+    CGFloat screenWidth = self.view.frame.size.width;
+    CGRect cropRect = [self.view convertRect:_qrRectView.imageView.frame fromView:_qrRectView];
+
+    [self.videoOutput setRectOfInterest:CGRectMake(cropRect.origin.y / screenHeight,
+                                          cropRect.origin.x / screenWidth,
+                                          cropRect.size.height / screenHeight,
+                                          cropRect.size.width / screenWidth)];
+    
+    self.promptLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, cropRect.origin.y + cropRect.size.height + 30, [UIScreen mainScreen].bounds.size.width - 20, 100)];
+    _promptLabel.numberOfLines = 0;
+    _promptLabel.textColor = [UIColor whiteColor];
+    _promptLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:_promptLabel];
+
     
 
 }
-- (void)didReceiveMemoryWarning {
+#pragma mark AVCaptureMetadataOutputObjectsDelegate
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
+{
+    NSString *stringValue;
+    if ([metadataObjects count] >0)
+    {
+        //停止扫描
+        [_session stopRunning];
+        AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
+        stringValue = metadataObject.stringValue;
+    }
+    
+    NSLog(@" %@",stringValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+         self.promptLabel.text = stringValue;
+    });
+   
+
+}
+
+- (void)pop:(UIButton *)button
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

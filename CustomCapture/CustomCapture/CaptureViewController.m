@@ -40,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"照相机";
     [self setupButton];
     [self setupSession];
     [self setupPreviewLayer];
