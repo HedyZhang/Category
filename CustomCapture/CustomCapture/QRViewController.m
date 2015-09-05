@@ -60,10 +60,17 @@
         [_session addOutput:self.videoOutput];
     }
     
-    self.videoOutput.metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code,
-                                    AVMetadataObjectTypeEAN8Code,
-                                    AVMetadataObjectTypeCode128Code,
-                                    AVMetadataObjectTypeQRCode];
+    self.videoOutput.metadataObjectTypes = @[AVMetadataObjectTypeAztecCode,
+                                             AVMetadataObjectTypeCode128Code,   //CODE128条码  顺丰用的
+                                             AVMetadataObjectTypeCode39Code,    //条形码   韵达和申通
+                                             AVMetadataObjectTypeCode39Mod43Code,
+                                             AVMetadataObjectTypeCode93Code,   //条形码,星号来表示起始符及终止符,如邮政EMS单上的条码
+                                             AVMetadataObjectTypeQRCode,        //二维码
+                                             AVMetadataObjectTypeEAN8Code,
+                                             AVMetadataObjectTypeUPCECode,
+                                             AVMetadataObjectTypePDF417Code,                                             
+                                             AVMetadataObjectTypeEAN13Code,
+                                             ];
     
     self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
     [_previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
@@ -114,7 +121,7 @@
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
     }
-    
+    NSLog(@"availableMetadataObjectTypes = %@", ((AVCaptureMetadataOutput *)captureOutput).availableMetadataObjectTypes);
     NSLog(@" %@",stringValue);
     dispatch_async(dispatch_get_main_queue(), ^{
          self.promptLabel.text = stringValue;
